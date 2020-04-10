@@ -1,7 +1,9 @@
-.well {
+#total-well {
   display: none;
 }
-
+.well {
+  background-color: rgba(28, 37, 65, 0.4);
+}
 body {
   background-image: url("../img/mountaintops.jpg");
 }
@@ -12,4 +14,19 @@ body {
 
 .row {
   color: azure;
+}
+
+#menu {
+  font-family: 'Permanent Marker', cursive;
+
+}
+
+h1 {
+  font-family: 'Libre Barcode 128 Text', cursive;
+  text-align: center;
+}
+
+h4 {
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
 }

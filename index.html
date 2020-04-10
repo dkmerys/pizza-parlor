@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet" type="text/css" media="all">
   <script src="js/jquery-3.4.1.js"></script>
   <script src="js/scripts.js"></script>
@@ -12,12 +14,12 @@
 <body>
   <div class="container">
     <div class="head">
-      <h1>Welcome to Tear It Down! Pizza</h1>
+      <h1>Tear It Down! Pizza</h1>
       <h4>Where you don't have to clean up after yourself</h4>
     </div>
       <div class="row">
       <form id="menu">
-        <div class="form-group col-md-6">
+        <div class="form-group col-md-6 well">
           <h4>How big do you want that pizza?</h4>
           <div class="form-group">
             <div class="radio">
@@ -42,9 +44,9 @@
             </div>
           </div>
         </div>
-        <h4>What do you want on it? Choose nothing and get a plain cheese pizza, which is fine.</h4>
-        <h5>Each topping is $1.50, no matter what size your pizza is.</h5>
-        <div class="form-group col-md-6">
+        <div class="form-group col-md-6 well">
+          <h4>Tell us what to put on it. Or just get cheese.</h4>
+          <h5>Each topping is $1.50, no matter what size your pizza is.</h5>
           <input type="checkbox" name="topping" value="pepperoni">Pepperoni<br>
           <input type="checkbox" name="topping" value="sausage">Sausage<br>        
           <input type="checkbox" name="topping" value="mushrooms">Mushrooms<br>            
@@ -59,7 +61,7 @@
         <button type="submit" class="btn-default">Order Pizza</button>
       </div>
       </form>
-    <div class =" well results">
+    <div class="well results" id="total-well">
     <div class="head2"><h2>Total Price</h2></div>
       <h4><span id="showTime"></span></h4>
       <h4>Your pizza is gonna cost $<span id="price"></span></h4>
