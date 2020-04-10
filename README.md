@@ -15,11 +15,11 @@ _This website is designed to imitate an online ordering portal for a pizza parlo
 - ##### output: Base cost of pizza is determined
 
 #### Spec - User can select toppings from multiple options
-- ##### input: Click one or more radio buttons
-- ##### ouput: Cost of pizza will be increased with each button selected
+- ##### input: Click any combination of 10 checkboxes
+- ##### ouput: Cost of pizza will be increased with each box selected
 
 #### Spec - Final price of pizza will be displayed
-- ##### input: Click "Submit" button
+- ##### input: Click "Order Pizza" button
 - ##### ouput: "Your total is $25"
 
 
