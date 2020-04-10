@@ -2,10 +2,11 @@
   display: none;
 }
 .well {
-  background-color: rgba(28, 37, 65, 0.4);
+  background-color: rgba(42, 42, 42, 0.4);
 }
 body {
-  background-image: url("../img/mountaintops.jpg");
+  background-image: url("../img/accent-weave.png");
+  background-size:  
 }
 
 .head {
@@ -17,16 +18,22 @@ body {
 }
 
 #menu {
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Bangers', cursive;
 
+  font-size: x-large;
 }
 
 h1 {
-  font-family: 'Libre Barcode 128 Text', cursive;
+  font-family: 'Bangers', cursive;
   text-align: center;
+  font-size: xx-large;
 }
 
 h4 {
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Bangers', cursive;
+  text-align: center;
+}
+h5 {
+  font-family: 'Bangers', cursive;
   text-align: center;
 }
