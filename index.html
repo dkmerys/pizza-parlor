@@ -9,12 +9,12 @@
   <link href="css/styles.css" rel="stylesheet" type="text/css" media="all">
   <script src="js/jquery-3.4.1.js"></script>
   <script src="js/scripts.js"></script>
-  <title>Tear It Down! Pizza</title>
+  <title>Red Line Pizza Order Form</title>
 </head>
 <body>
   <div class="container">
     <div class="head">
-      <h1>Tear It Down! Pizza</h1>
+      <h1>Red Line Pizza</h1>
       <h4>Where you don't have to clean up after yourself</h4>
     </div>
       <div class="row">
@@ -44,27 +44,32 @@
             </div>
           </div>
         </div>
-        <div class="form-group col-md-6 well">
+        <div class="well col-md-6">
           <h4>Tell us what to put on it. Or just get cheese.</h4>
           <h5>Each topping is $1.50, no matter what size your pizza is.</h5>
-          <input type="checkbox" name="topping" value="pepperoni"> Pepperoni<br>
-          <input type="checkbox" name="topping" value="sausage"> Sausage<br>        
-          <input type="checkbox" name="topping" value="mushrooms"> Mushrooms<br>            
-          <input type="checkbox" name="topping" value="bacon"> Bacon<br>           
-          <input type="checkbox" name="topping" value="black-olives"> Black Olives<br>            
-          <input type="checkbox" name="topping" value="canadian-bacon"> Canadian Bacon<br>           
-          <input type="checkbox" name="topping" value="chicken"> Chicken<br>            
-          <input type="checkbox" name="topping" value="extra-cheese"> X-tra Cheese<br>          
-          <input type="checkbox" name="topping" value="anchovies"> Anchovies<br>           
-          <input type="checkbox" name="topping" value="bell-peppers"> Bell Peppers<br>
+          <div class="form-group col-md-3">
+            <input type="checkbox" name="topping" value="pepperoni"> Pepperoni<br>
+            <input type="checkbox" name="topping" value="sausage"> Sausage<br>        
+            <input type="checkbox" name="topping" value="mushrooms"> Mushrooms<br>            
+            <input type="checkbox" name="topping" value="bacon"> Bacon<br>           
+            <input type="checkbox" name="topping" value="black-olives"> Black Olives<br>
+          </div>
+          <div class="form-group col-md-3">
+            <input type="checkbox" name="topping" value="canadian-bacon"> Canadian Bacon<br>           
+            <input type="checkbox" name="topping" value="chicken"> Chicken<br>            
+            <input type="checkbox" name="topping" value="extra-cheese"> X-tra Cheese<br>          
+            <input type="checkbox" name="topping" value="anchovies"> Anchovies<br>           
+            <input type="checkbox" name="topping" value="bell-peppers"> Bell Peppers<br>
+          </div>
         </div>
         <button type="submit" class="btn-default">Order Pizza</button>
-      </div>
       </form>
+    </div>
     <div class="well results" id="total-well">
-    <div class="head2"><h2>Total Price</h2></div>
-      <h4><span id="showTime"></span></h4>
-      <h4>Your pizza is gonna cost $<span id="price"></span></h4>
+    <div class="head2">
+      <h2>Total Price</h2>      
+      <h4>Your pizza is gonna cost $<span id="price"></span>.</h4>
+      <h4>It should be ready in about 45 minutes. Come get it.</h4>
     </div>
   </div>
 </body>

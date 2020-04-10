@@ -3,10 +3,10 @@
 }
 .well {
   background-color: rgba(42, 42, 42, 0.4);
+  text-align: center;
 }
 body {
-  background-image: url("../img/accent-weave.png");
-  background-size:  
+  background-image: url("../img/accent-weave.png"); 
 }
 
 .head {
@@ -26,14 +26,22 @@ body {
 h1 {
   font-family: 'Bangers', cursive;
   text-align: center;
-  font-size: xx-large;
+  font-size: 60px;
+}
+
+h2 {
+  font-family: 'Bangers', cursive;
+  text-align: center;
+  color: azure;
 }
 
 h4 {
   font-family: 'Bangers', cursive;
   text-align: center;
+  color: azure;
 }
 h5 {
   font-family: 'Bangers', cursive;
   text-align: center;
 }
+
