@@ -1,0 +1,15 @@
+.well {
+  display: none;
+}
+
+body {
+  background-image: url("../img/mountaintops.jpg");
+}
+
+.head {
+  color: azure;
+}
+
+.row {
+  color: azure;
+}

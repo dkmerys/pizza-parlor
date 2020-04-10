@@ -7,16 +7,17 @@
   <link href="css/styles.css" rel="stylesheet" type="text/css" media="all">
   <script src="js/jquery-3.4.1.js"></script>
   <script src="js/scripts.js"></script>
-  <title>Dan's Pizza Shop!</title>
+  <title>Tear It Down! Pizza</title>
 </head>
 <body>
   <div class="container">
     <div class="head">
-      <h1>Welcome to Dan's Pizza Shop!</h1>
+      <h1>Welcome to Tear It Down! Pizza</h1>
       <h4>Where you don't have to clean up after yourself</h4>
     </div>
+      <div class="row">
       <form id="menu">
-        <div class="form-group">
+        <div class="form-group col-md-6">
           <h4>How big do you want that pizza?</h4>
           <div class="form-group">
             <div class="radio">
@@ -42,8 +43,8 @@
           </div>
         </div>
         <h4>What do you want on it? Choose nothing and get a plain cheese pizza, which is fine.</h4>
-        <h5>Each topping is $1.50</h5>
-        <div class="form-group">
+        <h5>Each topping is $1.50, no matter what size your pizza is.</h5>
+        <div class="form-group col-md-6">
           <input type="checkbox" name="topping" value="pepperoni">Pepperoni<br>
           <input type="checkbox" name="topping" value="sausage">Sausage<br>        
           <input type="checkbox" name="topping" value="mushrooms">Mushrooms<br>            
@@ -56,8 +57,9 @@
           <input type="checkbox" name="topping" value="bell-peppers">Bell Peppers<br>
         </div>
         <button type="submit" class="btn-default">Order Pizza</button>
+      </div>
       </form>
-    <div class ="results">
+    <div class =" well results">
     <div class="head2"><h2>Total Price</h2></div>
       <h4><span id="showTime"></span></h4>
       <h4>Your pizza is gonna cost $<span id="price"></span></h4>

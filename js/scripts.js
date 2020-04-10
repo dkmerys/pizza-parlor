@@ -18,7 +18,7 @@ Pizza.prototype.sizeCheck = function() {
 }
 
 Pizza.prototype.toppingCheck = function() {
-  var toppingCost = (this.toppings.length * 1.5);
+  var toppingCost = (this.toppings.length * 1.50);
   console.log(toppingCost)
   return toppingCost
 };  
@@ -45,6 +45,6 @@ $(document).ready(function() {
     var pizza = new Pizza(size, toppings, price);
     pizza.finalPrice()
     
-    // console.log(finalPrice)
+    $(".well").fadeToggle(650);
   })
 });
