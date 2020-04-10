@@ -14,7 +14,6 @@ Pizza.prototype.sizeCheck = function() {
   } else if (this.size === "family") {
     this.price += 6
   }
-  console.log(this.price)
   return this.price
 }
 
@@ -24,13 +23,15 @@ Pizza.prototype.toppingCheck = function() {
   return toppingCost
 };  
 
+// UI Logic
+
 Pizza.prototype.finalPrice = function(){
   var base = this.sizeCheck();
   var addOn = this.toppingCheck();
   var finalPrice = (base + addOn);
+  $("#price").html(finalPrice)
   console.log(finalPrice)
 };
-// UI Logic
 
 
 $(document).ready(function() {
@@ -42,8 +43,6 @@ $(document).ready(function() {
     console.log(size)
 
     var pizza = new Pizza(size, toppings, price);
-    // pizza.sizeCheck();
-    // pizza.toppingCheck();
     pizza.finalPrice()
     
     // console.log(finalPrice)
