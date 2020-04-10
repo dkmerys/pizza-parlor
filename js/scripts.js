@@ -1,18 +1,10 @@
 // Business Logic
-function Pizza(size, toppings) {
+function Pizza(size, toppings, price) {
   this.size = size
   this.toppings = toppings
+  this.price = price
 };
 
-// var toppings = 
-// var userPizza = new Pizza (size, toppings)
-// write a prototype method that uses the properties of the object
-// to determine the price and adds price as a new property to the object
-
-
-Pizza.prototype.sizeCheck = function() {
-
-}
 // on submit, check which radio button from .size div is checked,
 // pass that to size variable
 // which one determines base price
@@ -26,41 +18,43 @@ Pizza.prototype.sizeCheck = function() {
 
 
 Pizza.prototype.sizeCheck = function() {
-
-}
-
-
-
-
-
-
-
-
-
-// UI Logic
-
-var sizeCheck = function(size) {
-  if (size === "small") {
-    this.price = 12
+  this.price = 12;
+  if (this.size === "medium"){
+    this.price += 2
+  } else if (this.size === "large") {
+    this.price += 4
+  } else if (this.size === "family") {
+    this.price += 6
   }
+  console.log(this.price)
 }
+
+Pizza.prototype.toppingCheck = function() {
+  var toppingCost = (this.toppings.length * 1.5);
+  console.log(toppingCost)
+  return toppingCost
+};  
+  
+Pizza.prototype.finalPrice = function(){
+  var finalPrice = (this.price += toppingCost)
+  console.log(finalPrice)
+  return finalPrice
+};
+  // UI Logic
+
 
 $(document).ready(function() {
   $("form#menu").submit(function(event) {
     event.preventDefault();
-    $("input:checkbox[name=topping]:checked").each.click(function(){
-      if($(this).prop("checked") == true){
-        console.log("checkbox is checked.")
-      }
-      else if($(this).prop("checked") ==false){
-        console.log("Checkbox is unchecked.");
-      }
-    })
+    var size = $("input:radio[name=size]:checked").val()
+    var toppings = $("input:checkbox[name=topping]:checked")
+    console.log(toppings.length)
+    console.log(size)
 
-    // var size = $("input:radio[name=size]:checked").val()
-    // console.log(size)
-
-    // var toppings = $("input:checkbox[name=topping]:checked").val()
-    // console.log(toppings)
+    var pizza = new Pizza(size, toppings, price);
+    pizza.sizeCheck();
+    pizza.toppingCheck();
+    pizza.finalPrice()
   })
+  // pizza.sizeCheck
 });
