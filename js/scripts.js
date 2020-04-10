@@ -5,20 +5,8 @@ function Pizza(size, toppings, price) {
   this.price = price
 };
 
-// on submit, check which radio button from .size div is checked,
-// pass that to size variable
-// which one determines base price
-
-// on submit, check how many radio buttons from .toppings div are checked
-// pass that to toppings variable
-// multiply number of toppings checked by 1.5
-// add that number to base price to get final price
-
-// return final price to user via html
-
-
 Pizza.prototype.sizeCheck = function() {
-  this.price = 12;
+  this.price = 10;
   if (this.size === "medium"){
     this.price += 2
   } else if (this.size === "large") {
@@ -27,6 +15,7 @@ Pizza.prototype.sizeCheck = function() {
     this.price += 6
   }
   console.log(this.price)
+  return this.price
 }
 
 Pizza.prototype.toppingCheck = function() {
@@ -34,13 +23,14 @@ Pizza.prototype.toppingCheck = function() {
   console.log(toppingCost)
   return toppingCost
 };  
-  
+
 Pizza.prototype.finalPrice = function(){
-  var finalPrice = (this.price += toppingCost)
+  var base = this.sizeCheck();
+  var addOn = this.toppingCheck();
+  var finalPrice = (base + addOn);
   console.log(finalPrice)
-  return finalPrice
 };
-  // UI Logic
+// UI Logic
 
 
 $(document).ready(function() {
@@ -52,9 +42,10 @@ $(document).ready(function() {
     console.log(size)
 
     var pizza = new Pizza(size, toppings, price);
-    pizza.sizeCheck();
-    pizza.toppingCheck();
+    // pizza.sizeCheck();
+    // pizza.toppingCheck();
     pizza.finalPrice()
+    
+    // console.log(finalPrice)
   })
-  // pizza.sizeCheck
 });
