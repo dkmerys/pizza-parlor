@@ -15,60 +15,89 @@
       <h1>Welcome to Dan's Pizza Shop!</h1>
       <h4>Where you don't have to clean up after yourself</h4>
     </div>
-      <form id="menu">
-      <br>
-      <h4>How big do you want that pizza?</h4>
-      <br>
-      <div class="size" id="size-check">
-        <label>
-        <input type="radio" name="size-small" id="size-small">Small (12") - $10
-        </label>
-        <label>
-        <input type="radio" name="size-medium" id="size-medium">Medium (14") - $12
-        </label>
-        <label>
-        <input type="radio" name="size-large" id="size-large">Large (16") - $14
-        </label>
-        <label>
-        <input type="radio" name="size-family" id="size-family">Family (20") - $18
-        </label>
-      </div>
-      <br>
-      <h4>What do you want on it? Choose nothing and get a plain cheese pizza, which is fine.</h4>
-      <h5>Each topping is $1.50</h5>
-      <div class="toppings=check">
-        <label>
-          <input type="radio" name="pepperoni" id="pepperoni">Pepperoni
-        </label>
-        <label>
-          <input type="radio" name="sausage" id="sausage">Sausage
-        </label>
-        <label>
-          <input type="radio" name="mushrooms" id="mushrooms">Mushrooms
-        </label>
-        <label>
-          <input type="radio" name="bacon" id="bacon">Bacon
-        </label>
-        <label>
-          <input type="radio" name="black-olives" id="black-olives">Black Olives
-        </label>
-        <label>
-          <input type="radio" name="canadian-bacon" id="canadian-bacon">Canadian Bacon
-        </label>
-        <label>
-          <input type="radio" name="chicken" id="chicken">Chicken
-        </label>
-        <label>
-          <input type="radio" name="extra-cheese" id="extra-cheese">X-tra Cheese
-        </label>
-        <label>
-          <input type="radio" name="anchovies" id="anchovies">Anchovies
-        </label>
-        <label>
-          <input type="radio" name="bell-peppers" id="bell-peppers">Bell Peppers
-        </label>
-      </div>
-      <button type="submit" class="btn-default">Order Pizza</button>
+      <form id="size-check">
+        <div class="form-group">
+          <h4>How big do you want that pizza?</h4>
+          <div class="form-group">
+            <div class="radio">
+              <label>
+              <input type="radio" name="size-small" id="size-small">Small (12") - $10
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+              <input type="radio" name="size-medium" id="size-medium">Medium (14") - $12
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+              <input type="radio" name="size-large" id="size-large">Large (16") - $14
+              </label>
+            </div>
+              <div class="radio">
+              <label>
+              <input type="radio" name="size-family" id="size-family">Family (20") - $18
+              </label>
+            </div>
+          </div>
+        </div>
+      </form>
+      <form id="toppings-check">
+        <h4>What do you want on it? Choose nothing and get a plain cheese pizza, which is fine.</h4>
+        <h5>Each topping is $1.50</h5>
+        <div class="form-group">
+          <div class="radio">
+            <label>
+              <input type="checkbox" name="topping" value="pepperoni">Pepperoni
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="checkbox" name="topping" value="sausage">Sausage
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="checkbox" name="topping" value="mushrooms">Mushrooms
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="checkbox" name="topping" value="bacon">Bacon
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="checkbox" name="topping" value="black-olives">Black Olives
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="checkbox" name="topping" value="canadian-bacon">Canadian Bacon
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="checkbox" name="topping" value="chicken">Chicken
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="checkbox" name="topping" value="extra-cheese">X-tra Cheese
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="checkbox" name="topping" value="anchovies">Anchovies
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="checkbox" name="topping" value="bell-peppers">Bell Peppers
+            </label>
+          </div>
+        </div>
+        <button type="submit" class="btn-default">Order Pizza</button>
       </form>
     <div class ="results">
     <div class="head2"><h2>Total Price</h2></div>
